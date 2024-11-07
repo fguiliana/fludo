@@ -1,0 +1,95 @@
+/* Reset CSS */
+@import 'reset.css';
+
+/* Fonts imports */
+@font-face {
+    font-family: 'tan-nimbus';
+    src: url('/media/fonts/TAN-NIMBUS.otf') format('opentype'),
+         url('/media/fonts/TAN-NIMBUS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Body Styling */
+body {
+    /* background-color: rgb(130, 159, 185); */
+    text-align: center;
+    display: block;
+    margin: 8px;
+    font-family: 'Open Sans';
+    font-size: xx-large;
+    min-height: 100vh;
+}
+
+#mastercontainer {
+    /* background-color: bisque; */
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    /* background-color: aquamarine; */
+    padding: 45px 20px 25px 20px;
+}
+
+h1 {
+    font-family: 'tan-nimbus';
+    text-transform: uppercase;
+    color: rgb(206, 98, 94);
+    font-size: 8rem;
+}
+
+header p {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+main {
+    padding: 0 20px;
+}
+
+.divider {
+    background-color: #333;
+    height: 2px;
+}
+
+.block {
+    padding: 20px 0;
+    text-align: left;
+}
+
+.block_title {
+    font-family: 'tan-nimbus';
+    margin-top: 5px;
+    color: #222222;
+}
+
+#address_hours {
+    text-align: center;
+}
+
+.address_title {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.address {
+    font-style: oblique;
+}
+
+.opening_hours {
+    padding-top: 20px;
+    letter-spacing: -2px;
+}
+
+.kitchen_hours {
+    letter-spacing: -2px;
+}
+
+.description {
+    letter-spacing: -2px;
+    font-weight: 500;
+}
