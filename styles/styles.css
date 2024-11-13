@@ -1,5 +1,6 @@
 /* Reset CSS */
 @import 'reset.css';
+/* @import 'animation_magic.css'; */
 
 /* Fonts imports */
 @font-face {
@@ -35,6 +36,7 @@ header {
 }
 
 h1 {
+    height: fit-content;
     font-family: 'tan-nimbus';
     text-transform: uppercase;
     color: rgb(206, 98, 94);
@@ -68,6 +70,7 @@ main {
 }
 
 #address_hours {
+    margin: 20px 0;
     text-align: center;
 }
 
@@ -90,6 +93,20 @@ main {
 }
 
 .description {
+    letter-spacing: -2px;
+    font-weight: 500;
+}
+
+.button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: green;
+    border: 2px solid #222222;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: -2px;
     font-weight: 500;
 }
