@@ -24,89 +24,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
   /* Typography */
-  body {
+body {
     font-family: 'Open Sans';
-    line-height: 1.6;
     font-size: 16px;
-  }
+}
   
   /* Container */
-  .container {
+.container {
     max-width: 600px;
     margin: 0 auto;
     padding: 0 15px;
-  }
+}
   
   /* Global Styles */
-  header, nav, section, footer {
-    /* background-color: antiquewhite; */
+header, nav, section, footer {
     padding: 20px;
     text-align: center;
-  }
+}
 
-  section.block {
+section.block {
     text-align: left;
-  }
+}
 
-  div {
+div {
     line-height: normal;
-  }
+}
 
-  h1.h1test {
-    font-family: 'tan-nimbus';
-    text-transform: uppercase;
-    color: rgb(206, 98, 94);
-  }
-
-  h1 {
+h1 {
+    line-height: 1.6;
     font-family: 'Antonio';
     text-transform: uppercase;
     margin-bottom: 5px;
-  }
+}
 
-  h2 {
+h2 {
+    line-height: 1.6;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 5px;
     letter-spacing: -0.5px;
-  }
+}
 
-  p.slogan {
+p.slogan {
     text-transform: uppercase;
     font-weight: 300;
     font-style: condensed;
     letter-spacing: -0.5px;
-  }
+}
 
-  div.divider {
+div.divider {
     margin: 0 20px;
     background-color: #333;
-  }
+}
 
-  a.address {
+a.address {
     font-style: oblique;
     color: black;
-  }
+}
 
   
-  img {
+img {
     max-width: 100%;
     height: auto;
-  }
+}
+
+img#fludo-logo {
+    margin: 15px 0;
+}
   
-  /* Breakpoints */
-  /* Extra Small Devices (phones, < 576px) */
-  @media (max-width: 575.98px) {
+/* Breakpoints */
+/* Extra Small Devices (phones, < 576px) */
+@media (max-width: 575.98px) {
     body {
       font-size: 14px;
     }
 
-    h1.h1test {
-        font-size: 3rem;
-    }
+    img#fludo-logo {
+        width: 200px;
+    }    
         
     h1 {
         font-size: 24px;
@@ -123,17 +121,17 @@
     .container {
       padding: 0 10px;
     }
-  }
+}
   
-  /* Small Devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) and (max-width: 767.98px) {
+/* Small Devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
     body {
       font-size: 15px;
     }
-  }
+}
   
-  /* Medium Devices (tablets, 768px and up) */
-  @media (min-width: 768px) and (max-width: 991.98px) {
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
     body {
       font-size: 16px;
     }
@@ -141,22 +139,22 @@
       display: flex;
       justify-content: space-around;
     }
-  }
+}
   
-  /* Large Devices (desktops, 992px and up) */
-  @media (min-width: 992px) and (max-width: 1199.98px) {
+/* Large Devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
     body {
       font-size: 17px;
     }
     .container {
       padding: 0 20px;
     }
-  }
+}
   
-  /* Extra Large Devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
     body {
       font-size: 18px;
     }
-  }
+}
   
