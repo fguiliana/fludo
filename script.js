@@ -2,18 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("Bienvenue chez Fludo !");
 });
 
-const spans = document.querySelectorAll('.word span');
+window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays';
+window.LOCALE = 'fr';
+window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
+window.REQUIRED_ERROR_MESSAGE = "Vous devez renseigner ce champ. ";
+window.GENERIC_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
+window.translation = {
+    common: {
+      selectedList: '{quantity} liste sélectionnée',
+      selectedLists: '{quantity} listes sélectionnées'
+    }
+};
 
-spans.forEach((span, idx) => {
-  span.addEventListener('click', (e) => {
-    e.target.classList.add('active');
-  });
-  span.addEventListener('animationend', (e) => {
-    e.target.classList.remove('active');
-  });
-  
-  // Initial animation
-  setTimeout(() => {
-    span.classList.add('active');
-  }, 750 * (idx+1))
-});
+var AUTOHIDE = Boolean(0);
+

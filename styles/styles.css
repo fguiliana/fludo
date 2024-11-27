@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
 @import 'reset.css';
-/* @import 'animation_magic.css'; */
+@import 'accordion.css';
+@import 'slideshow.css';
 
 /* Fonts imports */
 @font-face {
@@ -26,13 +27,13 @@
     box-sizing: border-box;
 }
   
-  /* Typography */
+/* Typography */
 body {
     font-family: 'Open Sans';
     font-size: 16px;
 }
   
-  /* Container */
+/* Container */
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -43,6 +44,54 @@ body {
 header, nav, section, footer {
     padding: 20px;
     text-align: center;
+}
+
+button {
+    width: 100%;
+    background-color: #FFF;
+    margin: 10px 0;
+    padding: 10px;
+    font-family: 'Antonio';
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    color: rgb(0, 0, 0);
+    border: 1px solid #333;
+}
+
+button:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.progress-indicator__icon {
+    position: relative;
+    height: 15px;
+}
+
+input {
+    width: 100% !important;
+    margin-top: 10px;
+    border: 1px solid #000;
+    padding: 12.5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-family: 'Open Sans';
+    font-size: inherit;
+}
+
+#error-message, #success-message {
+    margin-bottom: 5px;
+}
+
+img#fludo-logo {
+    margin: 15px 0;
 }
 
 section.block {
@@ -85,14 +134,22 @@ a.address {
     color: black;
 }
 
+a.button {
+    margin: 10px 0;
+    padding: 10px;
+    font-family: 'Antonio';
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    color: rgb(0, 0, 0);
+    border: 1px solid #333;
+}
+
   
 img {
     max-width: 100%;
     height: auto;
-}
-
-img#fludo-logo {
-    margin: 15px 0;
 }
   
 /* Breakpoints */
@@ -100,6 +157,14 @@ img#fludo-logo {
 @media (max-width: 575.98px) {
     body {
       font-size: 14px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    input {
+        font-size: 14px;
     }
 
     img#fludo-logo {
@@ -120,6 +185,10 @@ img#fludo-logo {
     
     .container {
       padding: 0 10px;
+    }
+
+    a.button {
+        font-size: 15px;
     }
 }
   
