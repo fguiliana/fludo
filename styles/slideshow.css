@@ -1,6 +1,9 @@
+.accordion {
+  margin-top: 30px;
+}
 .slider_container {
     position: relative;
-    margin-top: 15px;
+    margin-top: 30px;
     width: 100%;
     height: 25rem;
     display: flex;
