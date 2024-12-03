@@ -39,6 +39,11 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.intro {
+    border: 1px solid;
+    margin: 0 20px;
+}
   
   /* Global Styles */
 header, nav, section, footer {
@@ -46,9 +51,14 @@ header, nav, section, footer {
     text-align: center;
 }
 
+header {
+    margin-bottom: 15px;
+}
+
 button {
+    box-shadow: 5px 5px #C26963;
+    background-color: #fff;
     width: 100%;
-    background-color: #FFF;
     margin: 10px 0;
     padding: 10px;
     font-family: 'Antonio';
@@ -61,8 +71,15 @@ button {
 }
 
 button:hover {
-    background-color: yellow;
+    background-color: #fbfcc5;
     cursor: pointer;
+}
+
+button:focus {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    box-shadow: unset;
 }
 
 .progress-indicator__icon {
@@ -125,6 +142,7 @@ p.slogan {
 }
 
 div.divider {
+    height: 1px;
     margin: 0 20px;
     background-color: #333;
 }
@@ -135,6 +153,7 @@ a.address {
 }
 
 a.button {
+    box-shadow: 5px 5px #C26963;
     margin: 10px 0;
     padding: 10px;
     font-family: 'Antonio';
@@ -144,6 +163,13 @@ a.button {
     display: block;
     color: rgb(0, 0, 0);
     border: 1px solid #333;
+}
+
+a.button:active {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    box-shadow: unset;
 }
 
   
@@ -178,10 +204,6 @@ img {
     h2 {
         font-size: 15px;
     }
-
-    div.divider {
-        height: 1px;
-    }
     
     .container {
       padding: 0 10px;
@@ -197,6 +219,35 @@ img {
     body {
       font-size: 15px;
     }
+
+    button {
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+    img#fludo-logo {
+        width: 300px;
+    }    
+        
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+  
+    a.button {
+        font-size: 16px;
+    }
+  
 }
   
 /* Medium Devices (tablets, 768px and up) */
@@ -204,10 +255,35 @@ img {
     body {
       font-size: 16px;
     }
-    nav {
-      display: flex;
-      justify-content: space-around;
+
+    button {
+        font-size: 18px;
     }
+
+    input {
+        font-size: 16px;
+    }
+
+    img#fludo-logo {
+        width: 400px;
+    }    
+        
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+  
+    a.button {
+        font-size: 18px;
+    }
+
 }
   
 /* Large Devices (desktops, 992px and up) */
@@ -215,7 +291,33 @@ img {
     body {
       font-size: 17px;
     }
+
+    button {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    img#fludo-logo {
+        width: 400px;
+    }    
+        
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    a.button {
+        font-size: 18px;
+    }
+    
     .container {
+        max-width: 700px;
       padding: 0 20px;
     }
 }
@@ -224,6 +326,35 @@ img {
 @media (min-width: 1200px) {
     body {
       font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    img#fludo-logo {
+        width: 450px;
+    }    
+        
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    a.button {
+        font-size: 18px;
+    }
+    
+    .container {
+        max-width: 800px;
+        padding: 0 20px;
     }
 }
   
