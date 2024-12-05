@@ -32,6 +32,11 @@ body {
     font-family: 'Open Sans';
     font-size: 16px;
 }
+
+strong {
+    font-weight: 600;
+    /* font-style: bold !important; */
+}
   
 /* Container */
 .container {
@@ -113,6 +118,7 @@ img#fludo-logo {
 
 section.block {
     text-align: left;
+    margin-top: 20px;
 }
 
 div {
@@ -134,6 +140,12 @@ h2 {
     letter-spacing: -0.5px;
 }
 
+h3 {
+    font-weight: 600;
+    font-family: 'Antonio';
+    text-transform: uppercase;
+}
+
 p.slogan {
     text-transform: uppercase;
     font-weight: 300;
@@ -143,7 +155,7 @@ p.slogan {
 
 div.divider {
     height: 1px;
-    margin: 0 20px;
+    margin: 20px 20px 0px 20px;
     background-color: #333;
 }
 
@@ -154,7 +166,7 @@ a.address {
 
 a.button {
     box-shadow: 5px 5px #C26963;
-    margin: 10px 0;
+    margin-top: 20px;
     padding: 10px;
     font-family: 'Antonio';
     text-align: center;
@@ -209,7 +221,7 @@ img {
       padding: 0 10px;
     }
 
-    a.button {
+    a.button, h3 {
         font-size: 15px;
     }
 }
@@ -244,7 +256,7 @@ img {
         padding: 0 10px;
     }
   
-    a.button {
+    a.button, h3 {
         font-size: 16px;
     }
   
@@ -280,7 +292,7 @@ img {
         padding: 0 10px;
     }
   
-    a.button {
+    a.button, h3 {
         font-size: 18px;
     }
 
@@ -312,7 +324,7 @@ img {
         font-size: 20px;
     }
     
-    a.button {
+    a.button, h3 {
         font-size: 18px;
     }
     
@@ -348,7 +360,7 @@ img {
         font-size: 20px;
     }
     
-    a.button {
+    a.button, h3 {
         font-size: 18px;
     }
     
