@@ -8,6 +8,7 @@ yarn.lock
 # Ignore all files in dist/
 dist/*
 !dist/.gitkeep
+!dist/.nojekyll
 
 # Logs
 npm-debug.log*
