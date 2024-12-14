@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Bienvenue chez Fludo !");
-    console.log("Website made with love by Cam & Flo <3")
+    console.log("Website made with love by Cam & Flo");
 });
 
 window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays';
