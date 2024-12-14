@@ -5,7 +5,9 @@ node_modules/
 yarn.lock
 
 # Build output directories
+# Ignore all files in dist/
 dist/*
+!dist/.gitkeep
 
 # Logs
 npm-debug.log*
