@@ -31,7 +31,12 @@ jobs:
         yarn minify:js
         yarn minify:html
 
-    # Étape 5 : Déployer sur GitHub Pages
+    # Étape 5 : Copier le dossier media dans dist
+    - name: Copy media folder
+      run: |
+        cp -R media dist/media
+
+    # Étape 6 : Déployer sur GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
