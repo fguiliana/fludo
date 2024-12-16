@@ -189,6 +189,22 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: black; /* Couleur initiale des icônes */
+    font-size: 20px;
+    margin: 10px 10px; /* Espacement entre les icônes */
+    transition: color 0.3s ease; /* Transition pour l'effet d'hover */
+}
+
+.social-icons a:hover {
+    color: #C26963; /* Couleur du logo du site (à personnaliser) */
+}
   
 /* Breakpoints */
 /* Extra Small Devices (phones, less than 576px) */
