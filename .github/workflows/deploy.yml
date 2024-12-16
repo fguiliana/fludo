@@ -38,29 +38,39 @@ jobs:
         yarn minify:css
         yarn minify:js
         yarn minify:html
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        publish_branch: gh-pages
+        exclude_assets: |
+          .gitignore
+          .nojekyll
 
   # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages paeceiris
-        uses: peaceiris/actions-gh-pages@v4
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          exclude_assets: |
-            .gitignore
-            .nojekyll
+  # deploy:
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: write
+  #   concurrency:
+  #     group: ${{ github.workflow }}-${{ github.ref }}
+  #   needs: build
+  #   steps:
+  #     - name: Deploy to GitHub Pages paeceiris
+  #       uses: peaceiris/actions-gh-pages@v4
+  #       if: github.ref == 'refs/heads/main'
+  #       with:
+  #         github_token: ${{ secrets.GITHUB_TOKEN }}
+  #         publish_dir: ./dist
+  #         publish_branch: gh-pages
+  #         exclude_assets: |
+  #           .gitignore
+  #           .nojekyll
       # - name: Deploy to GitHub Pages
       #   id: deployment
       #   uses: actions/deploy-pages@v4
