@@ -2,6 +2,10 @@
     "version": "1.0",
     "disallow": {
       "tdm": true
+    },
+    "policy": {
+      "contact": "mailto:contact@fludo.fr",
+      "terms": "https://github.com/fguiliana/fludo/terms"
     }
   }
   
