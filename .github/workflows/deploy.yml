@@ -36,7 +36,7 @@ jobs:
       run: |
         cp -R media dist/media
         cp src/tdmrep.json dist/tdmrep.json
-        cp src/terms.min.html dist/terms.min.html
+        cp src/terms.html dist/terms.html
 
     # Étape 6 : Déployer sur GitHub Pages
     - name: Deploy to GitHub Pages
