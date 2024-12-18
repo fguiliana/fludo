@@ -35,7 +35,7 @@ jobs:
     - name: Copy media folder
       run: |
         cp -R media dist/media
-        cp tdmrep.json dist/tdmrep.json
+        cp src/tdmrep.json dist/tdmrep.json
 
     # Étape 6 : Déployer sur GitHub Pages
     - name: Deploy to GitHub Pages
