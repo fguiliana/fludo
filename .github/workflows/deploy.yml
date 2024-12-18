@@ -31,10 +31,11 @@ jobs:
         yarn minify:js
         yarn minify:html
 
-    # Étape 5 : Copier le dossier media dans dist
+    # Étape 5 : Copier le dossier media et tdmrep.json dans dist
     - name: Copy media folder
       run: |
         cp -R media dist/media
+        cp tdmrep.json dist/tdmrep.json
 
     # Étape 6 : Déployer sur GitHub Pages
     - name: Deploy to GitHub Pages
