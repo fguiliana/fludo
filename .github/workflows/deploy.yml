@@ -38,6 +38,7 @@ jobs:
         cp src/tdmrep.json dist/tdmrep.json
         cp src/terms.html dist/terms.html
         cp src/mentions.html dist/mentions.html
+        cp src/.htaccess dist/.htaccess
 
     # Étape 6 : Déployer sur GitHub Pages
     - name: Deploy to GitHub Pages
