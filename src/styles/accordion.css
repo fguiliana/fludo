@@ -36,6 +36,7 @@ details > *:not(summary) {
   color: transparent;
   overflow: hidden;
 }
+details.noel[open] > *:not(summary) { color: inherit; }
 details[open] > *:not(summary) { color: inherit; }
 
 
@@ -72,6 +73,12 @@ details[open] summary strong,
 summary:hover::before,
 details[open] summary::before {
   color: #bb6b5d;
+}
+summary.xmas:hover strong,
+details.noel[open] summary strong,
+summary.xmas:hover::before,
+details.noel[open] summary::before {
+  color: red;
 }
 .content {
   padding: 20px;
