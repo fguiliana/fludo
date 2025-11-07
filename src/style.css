@@ -49,7 +49,19 @@ strong {
     border: 1px solid;
     margin: 0 20px;
 }
-  
+
+.noel {
+    background-color: #334A39;
+    /* border: 5px dashed red; */
+    h2, div, div > a {
+        color: white;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
   /* Global Styles */
 header, nav, section, footer {
     padding: 20px;
@@ -108,6 +120,10 @@ input::placeholder {
     font-size: inherit;
 }
 
+li {
+    list-style: inside;
+}
+
 #error-message, #success-message {
     margin-bottom: 5px;
 }
@@ -157,6 +173,11 @@ div.divider {
     height: 1px;
     margin: 20px 20px 0px 20px;
     background-color: #333;
+}
+
+div.divider2 {
+    height: 0px;
+    margin: 20px 20px 0px 20px;
 }
 
 a.address {
