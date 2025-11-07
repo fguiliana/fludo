@@ -51,11 +51,15 @@ strong {
 }
 
 .noel {
-    background-color: darkgreen;
-    border: 5px dashed red;
+    background-color: #334A39;
+    /* border: 5px dashed red; */
     h2, div, div > a {
         color: white;
     }
+}
+
+.hidden {
+    display: none;
 }
 
   /* Global Styles */
