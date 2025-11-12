@@ -52,10 +52,7 @@ strong {
 
 .noel {
     background-color: #334A39;
-    /* border: 5px dashed red; */
-    h2, div, div > a {
-        color: white;
-    }
+    color: white !important;
 }
 
 .hidden {
